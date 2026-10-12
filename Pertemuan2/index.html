@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Absensi dan Form Mahasiswa Teknik Informatika</title>
+</head>
+<body>
+
+    <div align="center">
+        <h2>Absensi Mahasiswa Teknik Informatika</h2>
+    </div>
+    
+    <table border="1" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <td>
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th rowspan="2">NO</th>
+                        <th rowspan="2">NPM</th>
+                        <th rowspan="2">NAMA</th>
+                        <th colspan="7">PERTEMUAN</th>
+                    </tr>
+                    <tr>
+                       <th>1</th>
+                       <th>2</th>
+                       <th>3</th>
+                       <th>4</th>
+                       <th>5</th>
+                       <th>6</th>
+                       <th>7</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: right; font-weight: bold;"></td>
+                        <td>9-Feb</td>
+                        <td>16-Feb</td>
+                        <td>23-Feb</td>
+                        <td>2-Mar</td>
+                        <td>9-Mar</td>
+                        <td>16-Mar</td>
+                        <td>23-Mar</td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>1234567</td>
+                        <td>Fadly </td>
+                        <td align="center">v</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td>1234123</td>
+                        <td>Rachman</td>
+                        <td align="center">v</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td>123123123</td>
+                        <td>Lufy</td>
+                        <td align="center">v</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <H1 align="center" style="outline: auto;">Dibawah ini adalah </H1>
+    <br>
+    <br>
+    <br>
+
+    <h3>Form Mahasiswa</h3>
+    
+    <form>
+        <!-- PAKE FIELDSET BUAT NGELOMPOKIN TABLE NGASIH GARIS BATAS BORDER LUAR  -->
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <table cellpadding="3">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" size="30"></td>
+                </tr>
+                <tr>
+                    <td>NPM</td>
+                    <td>:</td>
+                    <td><input type="text" name="npm" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>:</td>
+                    <td>
+                        <select name="kelas">
+                            <option value="">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- PAKE FIELDSET buat ngelompokin table  -->
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <table cellpadding="3">
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                     <td><textarea name="alamat" rows="4" cols="30"></textarea></td> <!-- Fadly pake text area biar bisa dibesarin atau di kecilin ukuran table kotak text nya -->
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td><input type="text" name="kecamatan" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Kabupaten/Kotamadya</td>
+                    <td>:</td>
+                    <td><input type="text" name="kotamadya" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Provinsi</td>
+                    <td>:</td>
+                    <td><input type="text" name="provinsi" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Kode Pos</td>
+                    <td>:</td>
+                    <td><input type="text" name="kode_pos" size="30"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 3: Lain-lain -->
+        <fieldset>
+            <legend>Lain-lain</legend>
+            <table cellpadding="3">
+                <tr>
+                    <td>Bahasa Pemrograman</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="c" name="lang" value="C/C++"> <label for="c">C / C++</label>
+                        <input type="checkbox" id="golang" name="lang" value="Go Lang"> <label for="golang">Go Lang</label>
+                        <input type="checkbox" id="python" name="lang" value="Python"> <label for="python">Python</label>
+                        <input type="checkbox" id="lainnya" name="lang" value="Lainnya"> <label for="lainnya">Lainnya</label>
+                        <br>
+                        <input type="checkbox" id="php" name="lang" value="PHP"> <label for="php">PHP</label>
+                        <input type="checkbox" id="js" name="lang" value="Javascript"> <label for="js">Javascript</label>
+                        <input type="checkbox" id="ruby" name="lang" value="Ruby"> <label for="ruby">Ruby</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="org_mhs" name="kegiatan" value="Organisasi Kemahasiswaan"> <label for="org_mhs">Organisasi Kemahasiswaan</label>
+                        <input type="checkbox" id="olahraga" name="kegiatan" value="Bidang Olahraga"> <label for="olahraga">Bidang Olahraga</label>
+                        <input type="checkbox" id="keg_lain" name="kegiatan" value="Lainnya"> <label for="keg_lain">Lainnya</label>
+                        <br>
+                        <input type="checkbox" id="org_luar" name="kegiatan" value="Organisasi di Luar Kampus"> <label for="org_luar">Organisasi di Luar Kampus</label>
+                        <input type="checkbox" id="seni" name="kegiatan" value="Bidang Seni"> <label for="seni">Bidang Seni</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html> 
